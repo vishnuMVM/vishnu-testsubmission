@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selection</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="title">YAY! It's BOGO</h2>
+
+    <div class="product-option" onclick="toggleOptions(0)">
+        <input type="radio" name="product" id="product0">
+        <section>
+            <div for="product0" class="content">
+                <section>
+                    <span>1 Unit</span>
+                    <span class="discount">10% Off</span><br>
+                    <span>standard price</span>
+                </section>
+                <section class="right">
+                    <span class="price">$10.00 USD</span><br>
+                    <span class="original-price">$24.00 USD</span>
+                </section>
+            </div>
+            <div class="select-options" id="options-0"></div>
+        </section>
+    </div>
+
+    <div class="product-option" onclick="toggleOptions(1)">
+        <input type="radio" name="product" id="product1">
+        <section>
+            <div for="product1" class="content">
+                <section>
+                    <span>2 Units</span>
+                    <span class="discount">20% Off</span>
+                </section>
+                <section class="right">
+                    <span class="tag">Most Popular</span><br>
+                    <span class="price">$18.00 USD</span><br>
+                    <span class="original-price">$24.00 USD</span>
+                </section>
+            </div>
+            <div class="select-options" id="options-1"></div>
+        </section>
+    </div>
+
+    <div class="product-option" onclick="toggleOptions(2)">
+        <input type="radio" name="product" id="product2">
+        <section>
+            <div for="product2" class="content">
+                <section>
+                    <span>3 Units</span>
+                    <span class="discount">30% Off</span>
+                </section>
+                <section class="right">
+                    <span class="price">$24.00 USD</span>
+                </section>
+            </div>
+            <div class="select-options" id="options-2"></div>
+        </section>
+    </div>
+    <section class="bottom">
+        <p class="delivery">Free Delivery</p>
+        <p class="total">Total: $18.00 USD</p>
+    </section>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
